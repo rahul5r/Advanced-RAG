@@ -1,0 +1,83 @@
+
+[
+  {
+    "question": "What are the three specific ways Multi-Head Attention is utilized in the Transformer architecture?",
+    "ground_truth": "The Transformer uses multi-head attention in three ways: 1) 'encoder-decoder attention' layers where queries come from the previous decoder layer and keys/values come from the encoder output; 2) self-attention layers in the encoder where all keys, values, and queries come from the previous encoder layer; and 3) self-attention layers in the decoder that allow each position to attend to all positions up to and including that position, preserved by masking[cite: 561, 563, 146, 148]."
+  },
+  {
+    "question": "Which two individuals are credited with designing and implementing the first Transformer models?",
+    "ground_truth": "Ashish Vaswani and Illia Polosukhin are credited with designing and implementing the first Transformer models[cite: 497]."
+  },
+  {
+    "question": "What is the computational complexity per layer for a 'Recurrent' layer type as defined in the paper's comparison table?",
+    "ground_truth": "The complexity per layer for a Recurrent layer is O(n · d²), where 'n' is the sequence length and 'd' is the representation dimension[cite: 163, 167]."
+  },
+  {
+    "question": "What specific hardware was used to achieve the state-of-the-art results for the English-to-German translation task, and how long was the training duration?",
+    "ground_truth": "The model was trained for 3.5 days on eight NVIDIA P100 GPUs[cite: 495, 513]."
+  },
+  {
+    "question": "What is the primary reason the authors scale the dot product by 1/sqrt(d_k) in their attention mechanism?",
+    "ground_truth": "The authors suspect that for large values of d_k, the dot products grow large in magnitude, pushing the softmax function into regions with extremely small gradients; scaling counteracts this effect[cite: 125]."
+  },
+  {
+    "question": "How does the Transformer's 'Maximum Path Length' compare to 'Recurrent' layers for a sequence of length 'n'?",
+    "ground_truth": "The Transformer (Self-Attention) has a Maximum Path Length of O(1), whereas Recurrent layers have a Maximum Path Length of O(n)[cite: 167]."
+  },
+  {
+    "question": "What type of optimizer was used during training, and what were its specific hyperparameter values for beta1 and beta2?",
+    "ground_truth": "The Adam optimizer was used with β1 = 0.9 and β2 = 0.98[cite: 420, 243]."
+  },
+  {
+    "question": "In the experimental results for English constituency parsing, what F1 score did the 4-layer Transformer achieve on the WSJ 23 test set when trained only on WSJ data?",
+    "ground_truth": "The 4-layer Transformer achieved a WSJ 23 F1 score of 91.3 when trained only on the WSJ discriminative setting[cite: 19, 347]."
+  },
+  {
+    "question": "What is the dimensionality (d_model) of the base model's sub-layers and embedding layers?",
+    "ground_truth": "All sub-layers in the model, as well as the embedding layers, produce outputs of dimension d_model = 512[cite: 559]."
+  },
+  {
+    "question": "Which author is noted for proposing the replacement of RNNs with self-attention to start the research effort?",
+    "ground_truth": "Jakob Uszkoreit proposed replacing RNNs with self-attention and started the effort to evaluate the idea[cite: 497]."
+  },
+  {
+    "question": "What is the inner-layer dimensionality (d_ff) of the position-wise feed-forward networks used in the base model?",
+    "ground_truth": "The position-wise feed-forward networks have an inner-layer dimensionality of d_ff = 2048[cite: 289, 17]."
+  },
+  {
+    "question": "Describe the formula used for sinusoidal positional encodings for even dimensions (2i).",
+    "ground_truth": "The formula is PE(pos, 2i) = sin(pos / 10000^(2i/d_model))[cite: 185]."
+  },
+  {
+    "question": "What was the total number of parameters in the Transformer 'base' model?",
+    "ground_truth": "The base model had 65 × 10^6 (65 million) parameters[cite: 17]."
+  },
+  {
+    "question": "What dropout rate (P_drop) was applied to the base model during training?",
+    "ground_truth": "A dropout rate of P_drop = 0.1 was used[cite: 271, 17]."
+  },
+  {
+    "question": "Which dataset was used for the English-to-German translation task, and approximately how many sentence pairs did it contain?",
+    "ground_truth": "The task used the standard WMT 2014 English-German dataset consisting of about 4.5 million sentence pairs[cite: 239]."
+  },
+  {
+    "question": "What is the benefit of Multi-Head Attention over a single attention head, according to section 3.2.2?",
+    "ground_truth": "Multi-head attention allows the model to jointly attend to information from different representation subspaces at different positions, which is inhibited by averaging in a single attention head[cite: 518, 133]."
+  },
+  {
+    "question": "In the decoder, how is the self-attention layer modified to ensure it is auto-regressive?",
+    "ground_truth": "It is modified using masking to prevent positions from attending to subsequent positions, ensuring predictions for position 'i' only depend on known outputs at positions less than 'i'[cite: 563, 564, 102]."
+  },
+  {
+    "question": "What value was used for label smoothing (epsilon_ls) during training?",
+    "ground_truth": "A label smoothing value of ε_ls = 0.1 was employed[cite: 271, 17]."
+  },
+  {
+    "question": "According to Table 3, what happened to model quality (BLEU score) when the number of attention heads was increased to 32 while keeping other parameters constant?",
+    "ground_truth": "The BLEU score dropped to 25.4, showing that quality drops off if there are too many heads[cite: 17, 311]."
+  },
+  {
+    "question": "What vocabulary size was used for the English-German translation task after Byte-Pair Encoding?",
+    "ground_truth": "The task used a shared source-target vocabulary of about 37,000 tokens[cite: 240]."
+  }
+]

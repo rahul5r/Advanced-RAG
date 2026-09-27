@@ -1,0 +1,42 @@
+[
+  {
+    "question": "What is the specific mathematical formula used to calculate the output of a Scaled Dot-Product Attention function?",
+    "ground_truth": "The output is computed as a matrix of outputs using the formula: $Attention(Q,K,V)=softmax(\\frac{QK^{T}}{\\sqrt{d_{k}}})V$[cite: 118, 119]."
+  },
+  {
+    "question": "According to the paper, why is dot-product attention preferred over additive attention in terms of practical implementation?",
+    "ground_truth": "While similar in theoretical complexity, dot-product attention is much faster and more space-efficient in practice because it can be implemented using highly optimized matrix multiplication code[cite: 122]."
+  },
+  {
+    "question": "How many identical layers compose the encoder and decoder stacks, and what is the output dimensionality of these sub-layers?",
+    "ground_truth": "Both the encoder and decoder are composed of a stack of $N=6$ identical layers[cite: 80, 85]. All sub-layers in the model, as well as the embedding layers, produce outputs of dimension $d_{model}=512$[cite: 84]."
+  },
+  {
+    "question": "What specifically does the paper say about the contribution of Noam Shazeer to the Transformer model?",
+    "ground_truth": "Noam Shazeer proposed scaled dot-product attention, multi-head attention, and the parameter-free position representation, and was involved in nearly every detail of the work[cite: 22]."
+  },
+  {
+    "question": "What was the BLEU score achieved by the big Transformer model on the WMT 2014 English-to-French translation task, and how long did it take to train?",
+    "ground_truth": "The big model established a new state-of-the-art BLEU score of 41.8 (or 41.0 as noted in section 6.1) after training for 3.5 days on eight GPUs[cite: 20, 232, 234]."
+  },
+  {
+    "question": "The authors chose sinusoidal functions for positional encoding over learned embeddings for a specific reason. What was that reason?",
+    "ground_truth": "The authors chose the sinusoidal version because it may allow the model to extrapolate to sequence lengths longer than those encountered during training, even though both versions produced nearly identical results[cite: 175, 176]."
+  },
+  {
+    "question": "How does the complexity per layer of Self-Attention compare to Recurrent layers in terms of the sequence length 'n' and representation dimension 'd'?",
+    "ground_truth": "Self-Attention has a complexity per layer of $O(n^2 \\cdot d)$, whereas Recurrent layers have a complexity of $O(n \\cdot d^2)$[cite: 163]."
+  },
+  {
+    "question": "What modification was made to the decoder's self-attention sub-layer to preserve the auto-regressive property?",
+    "ground_truth": "The self-attention sub-layer in the decoder is modified to prevent positions from attending to subsequent positions by masking out (setting to $-\\infty$) all values in the input of the softmax which correspond to illegal connections[cite: 88, 145, 146]."
+  },
+  {
+    "question": "What hyperparameters were used for the Adam optimizer during the training of the Transformer?",
+    "ground_truth": "The Adam optimizer was used with $\\beta_{1}=0.9$, $\\beta_{2}=0.98$, and $\\epsilon=10^{-9}$[cite: 213]."
+  },
+  {
+    "question": "In the context of English constituency parsing, how did the 4-layer Transformer perform in the semi-supervised setting compared to the model by Vinyals & Kaiser et al. (2014)?",
+    "ground_truth": "In the semi-supervised setting, the 4-layer Transformer achieved a WSJ 23 F1 score of 92.7, which outperformed the 92.1 score reported by Vinyals & Kaiser et al. (2014) [cite: 271]."
+  }
+]

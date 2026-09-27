@@ -1,0 +1,162 @@
+[
+  {
+    "question": "What is the dropout rate used in the base model?",
+    "ground_truth": "0.1",
+    "source_file": "paper.pdf",
+    "source_path": "data/pdfs/paper.pdf",
+    "source_sha256": "bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697",
+    "chunk_id": 61
+  },
+  {
+    "question": "What value is used for label smoothing during training?",
+    "ground_truth": "0.1",
+    "source_file": "paper.pdf",
+    "source_path": "data/pdfs/paper.pdf",
+    "source_sha256": "bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697",
+    "chunk_id": 61
+  },
+  {
+    "question": "How do recurrent models factor computation along the symbol positions of input and output sequences?",
+    "ground_truth": "Recurrent models factor computation along the symbol positions of input and output sequences by generating a sequence of hidden states ht as a function of the previous hidden state ht−1 and the input for position t.",
+    "source_file": "paper.pdf",
+    "source_path": "data/pdfs/paper.pdf",
+    "source_sha256": "bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697",
+    "chunk_id": 9
+  },
+  {
+    "question": "What inherent characteristic of recurrent models precludes parallelization within training examples?",
+    "ground_truth": "The inherently sequential nature of recurrent models precludes parallelization within training examples.",
+    "source_file": "paper.pdf",
+    "source_path": "data/pdfs/paper.pdf",
+    "source_sha256": "bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697",
+    "chunk_id": 9
+  },
+  {
+    "question": "Which institution is associated with the email address lukaszkaiser@google.com?",
+    "ground_truth": "Google Brain",
+    "source_file": "paper.pdf",
+    "source_path": "data/pdfs/paper.pdf",
+    "source_sha256": "bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697",
+    "chunk_id": 1
+  },
+  {
+    "question": "Who is the author affiliated with the email address aidan@cs.toronto.edu?",
+    "ground_truth": "Aidan N. Gomez",
+    "source_file": "paper.pdf",
+    "source_path": "data/pdfs/paper.pdf",
+    "source_sha256": "bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697",
+    "chunk_id": 1
+  },
+  {
+    "question": "What is the relationship between the length n and the representation dimensionality d in the context of sentence representations used by state-of-the-art models?",
+    "ground_truth": "Length n is smaller than the representation dimensionality d.",
+    "source_file": "paper.pdf",
+    "source_path": "data/pdfs/paper.pdf",
+    "source_sha256": "bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697",
+    "chunk_id": 50
+  },
+  {
+    "question": "Which representations are mentioned as examples of sentence representations used by state-of-the-art models in machine translations?",
+    "ground_truth": "Word-piece and byte-pair representations.",
+    "source_file": "paper.pdf",
+    "source_path": "data/pdfs/paper.pdf",
+    "source_sha256": "bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697",
+    "chunk_id": 50
+  },
+  {
+    "question": "What process is made more difficult according to the passage?",
+    "ground_truth": "Registration or voting",
+    "source_file": "paper.pdf",
+    "source_path": "data/pdfs/paper.pdf",
+    "source_sha256": "bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697",
+    "chunk_id": 103
+  },
+  {
+    "question": "What does the attention mechanism in Figure 3 complete the phrase for the verb 'making'?",
+    "ground_truth": "Making...more difficult",
+    "source_file": "paper.pdf",
+    "source_path": "data/pdfs/paper.pdf",
+    "source_sha256": "bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697",
+    "chunk_id": 103
+  },
+  {
+    "question": "What types of tasks have end-to-end memory networks been used successfully in?",
+    "ground_truth": "Reading comprehension, abstractive summarization, textual entailment, and learning task-independent sentence representations.",
+    "source_file": "paper.pdf",
+    "source_path": "data/pdfs/paper.pdf",
+    "source_sha256": "bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697",
+    "chunk_id": 15
+  },
+  {
+    "question": "What mechanism do end-to-end memory networks use instead of sequence-aligned recurrence?",
+    "ground_truth": "A recurrent attention mechanism.",
+    "source_file": "paper.pdf",
+    "source_path": "data/pdfs/paper.pdf",
+    "source_sha256": "bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697",
+    "chunk_id": 15
+  },
+  {
+    "question": "How long did it take to train the base models?",
+    "ground_truth": "12 hours",
+    "source_file": "paper.pdf",
+    "source_path": "data/pdfs/paper.pdf",
+    "source_sha256": "bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697",
+    "chunk_id": 56
+  },
+  {
+    "question": "What was the duration of training for the big models?",
+    "ground_truth": "3.5 days",
+    "source_file": "paper.pdf",
+    "source_path": "data/pdfs/paper.pdf",
+    "source_sha256": "bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697",
+    "chunk_id": 56
+  },
+  {
+    "question": "What is the value of 'Pdrop' for the base model?",
+    "ground_truth": "0.1",
+    "source_file": "paper.pdf",
+    "source_path": "data/pdfs/paper.pdf",
+    "source_sha256": "bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697",
+    "chunk_id": 68
+  },
+  {
+    "question": "How many parameters does the base model have?",
+    "ground_truth": "6 × 10^6",
+    "source_file": "paper.pdf",
+    "source_path": "data/pdfs/paper.pdf",
+    "source_sha256": "bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697",
+    "chunk_id": 68
+  },
+  {
+    "question": "What is the F1 score of the Transformer model with 4 layers on WSJ 23?",
+    "ground_truth": "91.3",
+    "source_file": "paper.pdf",
+    "source_path": "data/pdfs/paper.pdf",
+    "source_sha256": "bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697",
+    "chunk_id": 76
+  },
+  {
+    "question": "Which research team achieved the highest F1 score on WSJ 23, and what was their score?",
+    "ground_truth": "Dyer et al. (2016), 91.7",
+    "source_file": "paper.pdf",
+    "source_path": "data/pdfs/paper.pdf",
+    "source_sha256": "bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697",
+    "chunk_id": 76
+  },
+  {
+    "question": "What matrices are used to compute the attention function in the given formula?",
+    "ground_truth": "The matrices used to compute the attention function are Q, K, and V.",
+    "source_file": "paper.pdf",
+    "source_path": "data/pdfs/paper.pdf",
+    "source_sha256": "bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697",
+    "chunk_id": 26
+  },
+  {
+    "question": "What is the formula for computing the matrix of outputs in the attention function?",
+    "ground_truth": "The formula for computing the matrix of outputs is Attention(Q, K, V) = softmax(QK^T / sqrt(d_k))V.",
+    "source_file": "paper.pdf",
+    "source_path": "data/pdfs/paper.pdf",
+    "source_sha256": "bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697",
+    "chunk_id": 26
+  }
+]
